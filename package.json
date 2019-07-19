@@ -1,0 +1,25 @@
+{
+  "name": "release-test",
+  "version": "1.2.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it --config=./ci/cool.json --ci",
+    "np-release": "np --no-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhan-sauce/release-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farhan-sauce/release-test/issues"
+  },
+  "homepage": "https://github.com/farhan-sauce/release-test#readme",
+  "dependencies": {
+    "np": "^5.0.3",
+    "release-it": "^12.3.3"
+  }
+}
