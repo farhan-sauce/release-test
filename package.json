@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "release": "release-it --config=./ci/cool.json --ci",
-    "np-release": "np --no-publish"
+    "release:patch": "np patch --no-publish",
+    "release:minor": "np minor --no-publish",
+    "release:major": "np major --no-publish"
   },
   "repository": {
     "type": "git",
