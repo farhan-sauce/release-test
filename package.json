@@ -10,7 +10,7 @@
     "release:major": "npm run release --major",
     "release:prePatch": "npm run release:patch --preRelease=${PRE_RELEASE:-default beta}",
     "release:preMinor": "npm run release:minor --preRelease=beta",
-    "release:preMajor": "npm run release:major --preRelease=beta"
+    "release:preMajor": "npm run release:major preRelease=beta"
   },
   "repository": {
     "type": "git",
