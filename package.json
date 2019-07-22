@@ -1,15 +1,15 @@
 {
   "name": "release-test",
-  "version": "6.5.0",
+  "version": "6.6.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "echo 'hello world'",
-    "release": "npm run build && release-it --config=./ci/cool.json --ci",
+    "release": "npm run build && release-it --config=./ci/cool.js --ci",
     "release:patch": "npm run release",
     "release:minor": "npm run release -- minor",
     "release:major": "npm run release -- major",
-    "release:pre": "release-it --config=./ci/cool.json --ci --preRelease=${PRE_RELEASE:-beta}",
+    "release:pre": "release-it --config=./ci/cool.js --ci --preRelease=${PRE_RELEASE:-beta}",
     "release:prepatch": "npm run release:pre",
     "release:preminor": "npm run release:pre -- minor",
     "release:premajor": "npm run release:pre -- major"
