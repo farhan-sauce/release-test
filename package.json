@@ -8,7 +8,7 @@
     "release:patch": "npm run release",
     "release:minor": "npm run release --minor",
     "release:major": "npm run release --major",
-    "release:prePatch": "npm run release:patch --preRelease=${PRE_RELEASE || 'beta'}",
+    "release:prePatch": "npm run release:patch --preRelease=${PRE_RELEASE:-default beta}",
     "release:preMinor": "npm run release:minor --preRelease=beta",
     "release:preMajor": "npm run release:major --preRelease=beta"
   },
