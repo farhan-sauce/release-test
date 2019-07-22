@@ -1,6 +1,6 @@
 {
   "name": "release-test",
-  "version": "6.0.1-rc.2",
+  "version": "6.0.1-rc.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "release:major": "npm run release -- major",
     "release:pre": "release-it --config=./ci/cool.json --ci --preRelease=${PRE_RELEASE:-beta}",
     "release:prepatch": "npm run release:pre",
-    "release:preminor": "npm run release:pre -- minor",
+    "release:preminor": "release-it --config=./ci/cool.json --ci --preRelease=${PRE_RELEASE:-beta} -- minor",
     "release:premajor": "npm run release:pre -- major"
   },
   "repository": {
