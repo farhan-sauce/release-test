@@ -30,7 +30,7 @@
     "preRelease": false,
     "draft": false,
     "tokenRef": "GITHUB_TOKEN",
-    "assets": "./dist/!(*_stable.*)",
+    "assets": "./dist/*",
     "host": null,
     "timeout": 0,
     "proxy": null
