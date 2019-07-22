@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "release": "release-it --config=./ci/cool.json --ci",
-    "release:patch": "np patch --no-publish",
-    "release:minor": "np minor --no-publish",
-    "release:major": "np major --no-publish"
+    "release:patch": "npm run release",
+    "release:minor": "npm run release --minor",
+    "release:major": "npm run release --major",
+    "release:prePatch": "npm run release:patch --preRelease=$(PRE_RELEASE || 'beta')",
+    "release:preMinor": "npm run release:minor --preRelease=beta",
+    "release:preMajor": "npm run release:major --preRelease=beta"
   },
   "repository": {
     "type": "git",
