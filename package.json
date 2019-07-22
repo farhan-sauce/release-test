@@ -1,6 +1,6 @@
 {
   "name": "release-test",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "release:major": "npm run release --major",
     "release:prePatch": "npm run release:patch --preRelease=${PRE_RELEASE:-default beta}",
     "release:preMinor": "npm run release:minor --preRelease=beta",
-    "release:preMajor": "npm run release major --preRelease=beta"
+    "release:preMajor": "npm run release --major --preRelease=beta"
   },
   "repository": {
     "type": "git",
